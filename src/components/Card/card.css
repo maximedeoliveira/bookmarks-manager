@@ -1,0 +1,45 @@
+.card {
+    border-radius: var(--rounded-lg);
+    box-shadow: var(--shadow);
+    background-color: var(--white);
+}
+
+.card img {
+    border-top-left-radius: var(--rounded-lg);
+    border-top-right-radius: var(--rounded-lg);
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem 1rem;
+    word-break: break-all;
+}
+
+.card .content > * + * {
+    margin-top: 0.25rem;
+}
+
+.card .content p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--black);
+}
+
+.card .content p > span {
+    line-height: 1rem;
+    font-weight: bold;
+    margin-right: 0.25rem;
+}
+
+.card .content .btn-group {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.card .content .btn-group > * + * {
+    margin-left: 0.25rem;
+}

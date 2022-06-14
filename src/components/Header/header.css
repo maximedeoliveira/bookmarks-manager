@@ -1,0 +1,53 @@
+.header {
+    width: 100%;
+    padding: 2rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    margin-bottom: 2rem;
+}
+
+.header form {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .header form {
+        max-width: 75%;
+    }
+}
+
+.header form input {
+    height: 3.5rem;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    border-radius: var(--rounded-lg);
+    z-index: 0;
+    border: 1px solid rgb(100 116 139);
+    box-shadow: var(--shadow);
+}
+
+.header form button.btn.btn-primary {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header form .error {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--red-400);
+    margin-top: 0.25rem;
+    margin-left: 0.25rem;
+}

@@ -1,0 +1,21 @@
+.icon-spinner {
+    color: var(--white);
+    animation: spin 1s linear infinite;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+.icon-spinner circle {
+    opacity: 0.25;
+}
+
+.icon-spinner path {
+    opacity: 0.75;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
